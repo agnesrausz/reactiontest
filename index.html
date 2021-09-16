@@ -3,6 +3,12 @@
 <head>
     <title>Javascript Game</title>
     <meta charset="UTF-8">
+    <meta property="og:image" content="https://agnesrausz.github.io/Reactiontest/images/meta_image.png">
+    <meta property="og:image:secure_url" content="https://agnesrausz.github.io/Reactiontest/images/meta_image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="reflex game" />
     <!-- http://proger.i-forge.net/The_smallest_transparent_pixel/ -->
     <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">
     <link rel="stylesheet" href="style.css">
@@ -10,145 +16,144 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Grand+Hotel&family=Patrick+Hand&family=Sacramento&display=swap">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Reaction Test</title>
 </head>
 <body>
-    <h1 class="animate__animated title">Reaction Test</h1>
-    <div class="buttons animate__animated animate__fadeInDownBig score-button">
-        <a href="#" class="button">ScoreBoard</a>
+<h1 class="animate__animated title">Reaction Test</h1>
+<div class="buttons animate__animated animate__fadeInDownBig score-button">
+    <a href="#" class="button">ScoreBoard</a>
+</div>
+<div class="main animate__animated animate__fadeInLeftBig">
+    <div class="container animate__animated">
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
+        <div class="col" data-round=""></div>
     </div>
-    <div class="main animate__animated animate__fadeInLeftBig">
-        <div class="container animate__animated" id="board">
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-            <div class="col" data-round=""></div>
-        </div>
-        <div class="container2 hide animate__animated" id="results">
-            <div class="wrapper">
-                <table class="result-table">
-                    <thead>
-                    <tr>
-                        <th>Round</th>
-                        <th>Hits</th>
-                        <th>Reaction Time (sec)</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="container3 hide animate__animated" id="score-board">
-            <div class="wrapper">
-                <table class="result-table">
-                    <thead>
-                    <tr>
-                        <th>Nr.</th>
-                        <th>Name</th>
-                        <th>Score</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-            </div>
+    <div class="container2 hide animate__animated">
+        <div class="wrapper">
+            <table class="result-table">
+                <thead>
+                <tr>
+                    <th>Round</th>
+                    <th>Hits</th>
+                    <th>Reaction Time (sec)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+    <div class="container3 hide animate__animated">
+        <div class="wrapper">
+            <table class="result-table">
+                <thead>
+                <tr>
+                    <th>Nr.</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
-    <div class="buttons">
-        <div class="animate__animated animate__fadeInUpBig start-button">
-            <a href="#" class="button">Start</a>
-        </div>
-        <div class="animate__animated hide animate__fadeInUpBig again-button ">
-            <a href="#" class="button">Back</a>
-        </div>
-        <div class="animate__animated hide animate__fadeInUpBig back-button ">
-            <a href="#" class="button">Back</a>
-        </div>
+<div class="buttons">
+    <div class="animate__animated animate__fadeInUpBig start-button">
+        <a href="#" class="button">Start</a>
     </div>
-    <script src="game.js"></script>
+    <div class="animate__animated hide animate__fadeInUpBig again-button ">
+        <a href="#" class="button">Again</a>
+    </div>
+    <div class="animate__animated hide animate__fadeInUpBig back-button ">
+        <a href="#" class="button">Back</a>
+    </div>
+</div>
+<script src="game.js"></script>
 </body>
 </html>
